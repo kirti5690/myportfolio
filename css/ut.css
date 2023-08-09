@@ -1,0 +1,302 @@
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn{
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s ease;
+    margin-right: -7rem;
+}
+.btn-primary{
+    background: var(--ternary);
+    color: var(--secondary);
+    margin-top: -3rem;
+}
+.btn-primary:hover{
+     background: transparent;
+     border-color: brown;
+     color: wheat;
+     font-weight: bolder;
+}
+.btn-secondary{
+    background: transparent;
+    border-color: brown;
+    color: white;
+}
+.btn-secondary:hover{
+    background: oldlace;
+    color: black;
+}
+.flex-1{
+    flex: 1rem;
+    
+}
+.justify-center{
+    justify-content: center;
+}
+@media (max-width:1024px) {
+    header #main-nav{
+     display:none;
+    }  
+    .myimage .left img{
+        width: 290px;
+        margin-top: -5px;
+    }
+    .myimage .right h1{
+        font-size:4rem;
+    }
+    .myimage .right p{
+        font-size:1.5rem;
+    }
+    .myimage{
+        padding-top: 14rem;;
+    }
+    header{
+        clip-path: polygon(0 0,100% 0,100% 100% , 27% 89%,0 100%);
+    }
+    section.about .imagss{
+        height: 320px;
+        width: 250px;
+    }
+    
+    section.services h1{
+        margin-left: 2rem;
+    } 
+    section.services p{
+        margin-left: 3rem;
+    }
+
+    section.services .card-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 0.1rem;
+    }
+    section.more {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    section.projects .card-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        margin-left: 8rem;
+    }
+    section.blogs .card-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+  
+    section.services .card-wrapper .card{
+        width: 240px;
+        height: auto;
+        
+    }
+    section.available h1{
+        padding: 1rem 0;
+        margin-top: -6rem;
+        font-size: 1.5rem;
+        margin-left: 3rem ;
+        
+     }
+     section.available p{
+        font-size: 1.5rem;
+        margin-left: 5rem;
+     }
+    section.contact .btn-wrapper{
+        margin-right: -1rem;
+    }
+    section.reviews .slider .slide span{
+        margin-left: 5rem;
+        margin-bottom: 4rem;
+     }
+     
+section.reviews .slide-dots button {
+    border: none;
+    background: burlywood;
+    text-align: center;
+    width: 6px;
+    height: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-right: 0.3rem;
+    outline: none;
+ 
+    
+    
+}
+    section.reviews .slide-dots .dots{
+        display: flex;
+       justify-content: center; /* Center horizontally */
+       align-items: flex-end;
+       margin-left: 8rem;
+     }
+     section.available{
+        clip-path: polygon(0 0,100% 0 ,100% 100%,70% 90% ,0 100%);
+     }
+ }
+ @media (max-width:667px){
+    .myimage{
+        flex-direction: column;
+    }
+    header{
+        clip-path: polygon(0 0 ,100% 0,100% 100%,69% 95%,0 100%);
+    }
+    .myimage .right{
+        position: absolute;
+        top: 260px;
+        padding: 0 1rem;
+        margin-left: 1rem;
+    
+    }
+    .myimage .right h4{
+        margin-bottom: 0.4rem;
+    }
+    .myimage .right h2{
+        margin-bottom: 2rem;
+    }
+    
+    .myimage .right p{
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 4rem;
+    }
+    .myimage .left{
+        margin-top: -1rem;
+        margin-right: -3rem;
+        padding-bottom: 0.3rem;
+    }
+    .about-inner-wrap{
+        flex-direction: column;
+    }
+    .about .rightttext{
+        text-align: center;
+        margin-top: 2rem;
+
+    }
+    .about  .social{
+        justify-content: center;
+    }
+    section{
+        padding: 3rem,0;
+    }
+    section.services .card-wrapper{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    section.services h1{
+        margin-left: 3rem;
+    }
+    section.services .centerp{
+        margin-left: 3rem;
+ }
+     section.available h1{
+        padding: 1rem 0;
+        margin-top: -6rem;
+        font-size: 0.8rem;
+        margin-left: -8rem;
+        
+     }
+     section.available p{
+        font-size: 1rem;
+        margin-left: -8rem;
+     }
+     section.available .btn-secondary{
+        height: 55px;
+        margin-left: -13rem;
+       
+     }
+     section.available{
+        clip-path: polygon(0 0,100% 0 ,100% 100%,70% 90% ,0 100%);
+     }
+     section.reviews h1{
+        margin-left: 1rem;
+     }
+     section.reviews p{
+        margin-left: 1rem;
+     }
+     section.reviews .slider .slide{
+        padding: 0;
+     }
+     section.reviews .slider .slide img{
+        margin-left: 2rem;
+     }
+     section.reviews .slider .slide p{
+         margin-left: 2rem;
+     }
+     .headding + p {
+         margin-bottom: 2rem;
+     }
+     section.reviews .slider .slide span{
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+     }
+     section.reviews .slide-dots .dots{
+        display: flex;
+       justify-content: center; /* Center horizontally */
+       align-items: flex-end;
+       margin-left: 4rem;
+     }
+     section.projects .card-wrapper .card .overlay {
+       
+        position: absolute;
+        height: 200px;
+        width: 250px;
+     }
+     
+section.projects .card-wrapper .card{
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+    position: relative;
+    margin-left: -9rem;
+       
+ }
+ section.projects .card-wrapper .card img{
+    height: 200px;
+    width: 250px;
+ }
+ .pure{
+    margin-left: 1rem;
+ }
+
+.pure + p{
+    margin-left: 0;
+}
+section.blog{
+    padding-bottom: 8rem;
+    clip-path: polygon(0 0,100% 0,100% 100%, 75% 95%,0 100%);
+}
+section.blog .card-wrapper{
+    grid-template-columns: repeat(1,1fr);
+}
+section.contact .card-wrapper{
+    grid-template-columns: repeat(1,1fr);
+}
+section.contact .input-wrap{
+    grid-template-columns: repeat(1,1fr);
+}
+section.contact h1{
+    margin-left: 2rem;
+}
+section.contact p{
+    margin-left: 0;
+}
+section.contact .card-wrapper .card h6{
+     margin-bottom: 1rem;
+}
+section.contact .input-wrap{
+    margin-top: 2rem;
+}
+section.contact .btn-wrapper{
+    margin-left: -4rem;
+}
+
+section.services .card-wrapper .card {
+    margin-left: 4rem;
+}
+}
