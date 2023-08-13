@@ -695,7 +695,7 @@ footer .footer-wrapper a img{
     left: 0;
     z-index: 1001;
     background: tan;
-    width: 20%;
+    width: 65%;
     height: 100%;
     padding: 2rem;
     padding-top: 5rem;
@@ -712,8 +712,8 @@ footer .footer-wrapper a img{
 }
 .times{
     position: fixed;
-    top: 30px;
-    right: 30px;
+    top: 52px;
+    right: 10px;
     border: none;
     outline: none;
     background: none;
